@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    position: relative;
+    font-size: 175%;
+  }
+  
+  h1, .mainContent {
+    top: 100px;
+  }
+  
+  .mainContent {
+    position: relative;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .kvadro {
+    background-color: rgb(152, 219, 184);
+    min-height: fit-content;
+    border: 1px solid black;
+    position: relative;
+    float: left;
+    margin: 1.5%;
+  }
+  
+  .mark {
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    min-width: 100px;
+    height: min-content;
+    padding: 10px;
+    float: right;
+    font-size: 125%;
+  }
+  
+  .kvadro p {
+    padding: 10px;
+    clear: both;
+    text-align: left;
+  }
+  
+  .m1 {
+    background-color: brown;
+  }
+  
+  .m2 {
+    background-color: rgb(42, 165, 63);
+  }
+  
+  .m3 {
+    background-color: rgb(58, 42, 165);
+  }
+  
+  /*Desktop view*/
+  @media (min-width: 992px) {
+    .kvadro {
+      width: calc(33.33% - 4%);
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  /*Tablet view */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .B1, .B2 {
+      width: calc(91% / 2);
+      margin-top: 50px;
+    }
+    .B3 {
+      width: 100%;
+      margin-bottom: 50px;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 767px) {
+    .kvadro {
+      width: 100%;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .B1 {
+      margin-top: 50px;
+    }
+    .B3 {
+      margin-bottom: 50px;
+    }
+  }
+  
